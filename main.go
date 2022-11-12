@@ -35,6 +35,7 @@ func main() {
 
 }
 
+// GetProductByID function outputs the parameter id
 func GetProductByID(c *gin.Context) {
 	id := c.Param("id")
 	fmt.Println(id)
@@ -44,6 +45,7 @@ func GetProductByID(c *gin.Context) {
 	})
 }
 
+// ShowProfile function outputs the user's name from the parameter
 func ShowProfile(c *gin.Context) {
 	username := c.Param("username")
 	fmt.Println(username)
@@ -53,6 +55,7 @@ func ShowProfile(c *gin.Context) {
 	})
 }
 
+// Сompute function calculates the sum of the parameters
 func Compute(c *gin.Context) {
 	num1, _ := strconv.Atoi(c.Param("num1"))
 	num2, _ := strconv.Atoi(c.Param("num2"))
