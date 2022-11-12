@@ -39,7 +39,7 @@ func GetProductByID(c *gin.Context) {
 	id := c.Param("id")
 	fmt.Println(id)
 	c.JSON(200, gin.H{
-		"id": id,
+		"id":      id,
 		"product": "Milk",
 	})
 }
@@ -49,7 +49,7 @@ func ShowProfile(c *gin.Context) {
 	fmt.Println(username)
 	c.JSON(200, gin.H{
 		"username": username,
-		"family" : "Moshkov",
+		"family":   "Moshkov",
 	})
 }
 
@@ -61,6 +61,6 @@ func Compute(c *gin.Context) {
 	c.JSON(200, gin.H{
 		"num1": num1,
 		"num2": num2,
-		"sum": sum,
+		"sum":  sum,
 	})
 }
